@@ -4,12 +4,8 @@ clc;
 clear all;
 close all;
 
-# TASK: Create 100 consecutive Poisson processes wiith exprnd() and draw the stairs function
-# of one Poisson counting process with lambda = 5.
-
-# The waiting times follow an exponential distribution with parameter lambda.
-
-# counter ~= lambda*T.
+% TASK: Create 100 consecutive Poisson processes wiith exprnd() and draw the stairs function
+% of one Poisson counting process with lambda = 5.
 
 lambda = 5;
 samples = exprnd(1/lambda, 1, 100);
@@ -22,11 +18,8 @@ ylabel("Number of events");
 legend("lambda=5");
 hold off;
 
-# TASK: Find mean number of events per second for a window DT = t1 - t2 of 100 consecutive
-# events. Repeat for 200, 300, 500, 1000, 10000 consecutive events.
-
-# The number of events on a given T window of time follows a Poisson distribution with
-# mean equal to lambda*T.
+% TASK: Find mean number of events per second for a window DT = t1 - t2 of 100 consecutive
+% events. Repeat for 200, 300, 500, 1000, 10000 consecutive events.
 
 end_time = arrival_time(end);
 mean = 100/end_time;
@@ -47,5 +40,3 @@ for i=1:5
   display(mean);
   display(deviation);
 endfor
-
-# We can see that the more the samples the closer to lambda is the mean value.

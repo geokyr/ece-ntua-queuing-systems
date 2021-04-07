@@ -4,9 +4,9 @@ clc;
 clear all;
 close all;
 
-# TASK: In a common diagram, design the Probability Mass Function of Poisson processes
-# with lambda parameters 3, 10, 30, 50. In the horizontal axes, choose k parameters 
-# between 0 and 70. 
+% TASK: In a common diagram, design the Probability Mass Function of Poisson processes
+% with lambda parameters 3, 10, 30, 50. In the horizontal axes, choose k parameters 
+% between 0 and 70. 
 
 k = 0:1:70;
 lambda = [3,10,30, 50];
@@ -28,8 +28,8 @@ xlabel("k values");
 ylabel("probability");
 legend("lambda=3","lambda=10","lambda=30","lambda=50");
 
-# TASK: regarding the poisson process with parameter lambda 30, compute its mean 
-# value and variance
+% TASK: regarding the poisson process with parameter lambda 30, compute its mean 
+% value and variance
 
 index = find(lambda == 30);
 chosen = poisson(index,:);
@@ -50,8 +50,8 @@ variance = second_moment - mean_value.^2;
 display("Variance of Poisson with lambda 30 is");
 display(variance);
 
-# TASK: consider the convolution of the Poisson distribution with lambda 20 with 
-# the Poisson distribution with lambda 30. 
+% TASK: consider the convolution of the Poisson distribution with lambda 20 with 
+% the Poisson distribution with lambda 30. 
 
 first = find(lambda==10);
 second = find(lambda==50);
@@ -72,9 +72,9 @@ xlabel("k values");
 ylabel("Probability");
 legend("lambda=10","lambda=50","new process");
 
-# TASK: show that Poisson process is the limit of the binomial distribution.
+% TASK: show that Poisson process is the limit of the binomial distribution.
 k = 0:1:200;
-# Define the desired Poisson Process
+% Define the desired Poisson Process
 lambda = 30;
 i = 1:1:5;
 n = lambda.*i; 
