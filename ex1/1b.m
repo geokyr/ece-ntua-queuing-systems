@@ -8,8 +8,7 @@ close all;
 % with mean parameters (1/lambda) 0.5, 1, 3. In the horizontal axes, choose k parameters 
 % between 0 and 8. 
 
-% Hint is use k = 0:0.00001:8, for less demanding calculations and graphs we use k = 0:0.001:8.
-k = 0:0.001:8;
+k = 0:0.00001:8;
 mean = [0.5,1,3];
 
 for i=1:columns(mean)
@@ -17,7 +16,7 @@ for i=1:columns(mean)
 endfor
 
 colors = "rbk";
-figure(1);
+figure(1,"graphicssmoothing","off");
 hold on;
 
 for i=1:columns(mean)
@@ -40,7 +39,7 @@ for i=1:columns(mean)
 endfor
 
 colors = "rbk";
-figure(2);
+figure(2,"graphicssmoothing","off");
 hold on;
 
 for i=1:columns(mean)
@@ -67,8 +66,6 @@ p_20000 = 1 - expo(20000);
 %P(A|B) = P(A^B)/P(B);
 conditional = p_50000/p_20000;
 
-display("P(X>30000) is equal to:");
-display(p_30000);
+printf("Pr(X>30000) is equal to: %d.\n", p_30000);
 
-display("Pr(X>50000|X>20000) is equal to:");
-display(conditional);
+printf("Pr(X>50000|X>20000) is equal to: %d.\n", conditional);

@@ -42,8 +42,7 @@ for i=0:(columns(poisson(index,:))-1)
   mean_value = mean_value + i.*poisson(index,i+1);
 endfor
 
-display("Mean value of Poisson with lambda 30 is :");
-display(mean_value);
+printf("Mean value of Poisson with lambda 30 is: %d.\n", mean_value);
 
 second_moment = 0;
 for i=0:(columns(poisson(index,:))-1)
@@ -51,8 +50,7 @@ for i=0:(columns(poisson(index,:))-1)
 endfor
 
 variance = second_moment - mean_value.^2;
-display("Variance of Poisson with lambda 30 is :");
-display(variance);
+printf("Variance of Poisson with lambda 30 is: %d.\n", variance);
 
 
 % TASK: Consider the convolution of the Poisson distribution with lambda 10 with 
@@ -76,7 +74,7 @@ stem(new_k,composed,colors(3),"linewidth",1.2);
 % to observe that it is the same as the convolution of the 2 other distributions.
 
 % poisson_sum(1,:) = poisspdf(new_k,60);
-% stem(new_k,poisson_sum(:),colors(4),"linewidht",1.2);
+% stem(new_k,poisson_sum(:),colors(4),"linewidth",1.2);
 
 hold off;
 title("Convolution of two Poisson processes");

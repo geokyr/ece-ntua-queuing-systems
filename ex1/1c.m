@@ -24,12 +24,9 @@ hold off;
 end_time = arrival_time(end);
 mean = 100/end_time;
 deviation = abs(lambda-mean);
-display("For 100 samples: ");
-display(mean);
-display(deviation);
+printf("For 100 samples mean is equal to %d and deviation is equal to %d.\n", mean, deviation);
 
 n_samples = [200, 300, 500, 1000, 10000];
-display("For 200, 300, 500, 1000, 10000 samples respectively: ");
 
 for i=1:5
   samples = exprnd(1/lambda, 1, n_samples(i));
@@ -37,6 +34,5 @@ for i=1:5
   end_time = arrival_time(end);
   mean = n_samples(i)/end_time;
   deviation = abs(lambda-mean);
-  display(mean);
-  display(deviation);
+  printf("For %d samples mean is equal to %d and deviation is equal to %d.\n", n_samples(i), mean, deviation);
 endfor
