@@ -1,4 +1,4 @@
 queuing
 -------
 
-Repository for the Queuing Systems course.d
+Repository for the Queuing Systems course.
