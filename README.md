@@ -11,13 +11,13 @@ There were 5 lab assignments in total. Each assignment had a set of problems to 
 - Markov Chain
 - Poisson Process
 - Birth-Death Processes
+- Little's Law
+- Jackson's Theorem
 - M/M/1
 - M/M/1/K
 - M/M/c
 - M/M/c/c
 - M/G/1
-- Little's Law
-- Jackson's Theorem
 
 ## Exam Answers
 
