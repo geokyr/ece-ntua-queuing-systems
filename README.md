@@ -8,7 +8,7 @@ There were 5 lab assignments in total. Each assignment had a set of problems to 
 
 - Poisson Distribution
 - Exponential Distribution
-- Markov Stochastic Processes
+- Markov Chain
 - Poisson Point Process
 - Birth-Death Processes
 - M/M/1
