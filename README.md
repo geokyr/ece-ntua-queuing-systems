@@ -4,7 +4,7 @@ Lab Assignments and Exam Answers for the [Queuing Systems](https://www.ece.ntua.
 
 ## Lab Assignments
 
-There were 5 lab assignments in total. Each assignment had a set of problems to be solved. The use of [MATLAB](https://www.mathworks.com/products/matlab.html) or [GNU Octave](https://octave.org/) was needed for parts of the assignments. The assignments covered the following topics.
+There were 5 lab assignments in total. Each assignment had a set of problems to be solved. The use of [GNU Octave](https://octave.org/) or [MATLAB](https://www.mathworks.com/products/matlab.html) was needed for parts of the assignments, as well as the [Octave Queueing Package](https://www.moreno.marzolla.name/software/queueing/). The assignments covered the following topics.
 
 - Poisson Distribution
 - Exponential Distribution
